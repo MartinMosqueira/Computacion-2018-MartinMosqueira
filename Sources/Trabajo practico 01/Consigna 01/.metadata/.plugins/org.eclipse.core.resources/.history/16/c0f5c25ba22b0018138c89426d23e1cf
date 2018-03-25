@@ -1,0 +1,18 @@
+/*
+ * Complejos.cpp
+ *
+ *  Created on: 19 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Complejos.h"
+
+Complejos::Complejos() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Complejos::~Complejos() {
+	// TODO Auto-generated destructor stub
+}
+

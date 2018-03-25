@@ -1,0 +1,25 @@
+/*
+ * Complejos.h
+ *
+ *  Created on: 19 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef COMPLEJOS_H_
+#define COMPLEJOS_H_
+
+class Complejos {
+private:
+	int real;
+	int imaginario;
+public:
+	Complejos();
+	int getreal();
+	void setreal(int);
+	int getimaginario();
+	void setimaginario(int);
+	void input();
+	void show();
+};
+
+#endif /* COMPLEJOS_H_ */

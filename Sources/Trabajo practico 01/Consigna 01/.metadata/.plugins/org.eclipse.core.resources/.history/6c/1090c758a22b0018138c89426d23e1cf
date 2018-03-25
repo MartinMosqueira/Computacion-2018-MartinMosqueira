@@ -1,0 +1,17 @@
+/*
+ * Complejos.h
+ *
+ *  Created on: 19 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef COMPLEJOS_H_
+#define COMPLEJOS_H_
+
+class Complejos {
+public:
+	Complejos();
+	virtual ~Complejos();
+};
+
+#endif /* COMPLEJOS_H_ */

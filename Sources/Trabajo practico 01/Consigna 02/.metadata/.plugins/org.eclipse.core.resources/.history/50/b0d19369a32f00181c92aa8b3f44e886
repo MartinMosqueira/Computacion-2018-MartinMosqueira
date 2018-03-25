@@ -1,0 +1,39 @@
+/*
+ * Persona.cpp
+ *
+ *  Created on: 23 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Persona.h"
+#include <iostream>
+using namespace std;
+
+Persona::Persona() {
+	// TODO Auto-generated constructor stub
+
+}
+    string getApellido() {
+		return apellido;
+	}
+
+	void setApellido(string apellido) {
+		this->apellido = apellido;
+	}
+
+	long getDni() {
+		return dni;
+	}
+
+	void setDni(long dni) {
+		this->dni = dni;
+	}
+
+	 string getNombre() {
+		return nombre;
+	}
+
+	void setNombre(string nombre) {
+		this->nombre = nombre;
+	}
+
