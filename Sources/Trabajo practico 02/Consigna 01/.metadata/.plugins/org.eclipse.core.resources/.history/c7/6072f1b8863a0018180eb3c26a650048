@@ -1,0 +1,65 @@
+/*
+ * Fecha.cpp
+ *
+ *  Created on: 25 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Fecha.h"
+#include <iostream>
+using namespace std;
+
+Fecha::Fecha(int dia, int mes, int anho) {
+this->dia=dia;
+this->mes=mes;
+this->anho=anho;
+}
+Fecha::Fecha(){
+	dia=1;
+	mes=1;
+	anho=1980;
+}
+int Fecha::getdia(){
+	return dia;
+}
+
+void Fecha::setdia(int dia){
+	this->dia=dia;
+}
+
+int Fecha::getmes(){
+	return mes;
+}
+void Fecha::setmes(int mes){
+	this->mes=mes;
+}
+
+int Fecha::getanho(){
+	return anho;
+}
+
+void Fecha::setanho(int anho){
+	this->anho=anho;
+}
+void Fecha::input(){
+	cout<<"ingrese el dia: ";
+	cin>>this->dia;
+	cout<<"ingrese el mes: ";
+	cin>>this->mes;
+	cout<<"ingrese el año: ";
+	cin>>this->anho;
+}
+void Fecha::show(){
+	cout<<this->dia<<" / "<<this->mes<<" / "<<this->anho<<endl;
+}
+
+void sumadia(){
+	int di,me,anh;
+	int suma;
+	cout<<"ingrese el dia: "<<endl;
+	cin>>di;
+	cout<<"ingrese el mes: "<<endl;
+	cin>>me;
+	cout<<"ingrese el año: "<<endl;
+	cin>>anh;
+}
