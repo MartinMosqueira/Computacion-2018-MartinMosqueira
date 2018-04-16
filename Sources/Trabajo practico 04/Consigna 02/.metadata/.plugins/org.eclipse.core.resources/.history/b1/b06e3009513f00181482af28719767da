@@ -1,0 +1,17 @@
+//============================================================================
+// Name        : main.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+#include "Fecha.h"
+#include "Persona.h"
+
+int main() {
+Fecha* fe1(15,07,96);
+Persona pe1(39798574,martin,mosqueira,fe1);
+}

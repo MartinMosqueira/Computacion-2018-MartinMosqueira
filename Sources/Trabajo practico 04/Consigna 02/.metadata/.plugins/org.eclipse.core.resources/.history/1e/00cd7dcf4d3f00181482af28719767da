@@ -1,0 +1,36 @@
+/*
+ * Persona.cpp
+ *
+ *  Created on: 13 abr. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Persona.h"
+#include "Fecha.h"
+
+Persona::Persona() {
+	// TODO Auto-generated constructor stub
+
+}
+
+long Persona::getdni(){
+	return dni;
+}
+void Persona::setdni(long dni){
+	this->dni=dni;
+}
+string Persona::getnombre(){
+	return nombre;
+}
+void Persona::setnombre(string nombre){
+	this->nombre=nombre;
+}
+string Persona::getapellido(){
+	return apellido;
+}
+void Persona::setapellido(string apellido){
+	this->apellido=apellido;
+}
+Fecha* Persona::getnacimiento(){
+	return nacimiento;
+}

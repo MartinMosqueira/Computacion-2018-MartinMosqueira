@@ -1,0 +1,22 @@
+/*
+ * Persona.h
+ *
+ *  Created on: 13 abr. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+#include <string>
+using namespace std;
+
+class Persona {
+private:
+	long dni;
+	string nombre;
+	string apellido;
+public:
+	Persona();
+};
+
+#endif /* PERSONA_H_ */

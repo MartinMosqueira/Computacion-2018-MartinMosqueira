@@ -1,0 +1,233 @@
+/*
+ * Fecha.cpp
+ *
+ *  Created on: 25 mar. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Fecha.h"
+#include <iostream>
+using namespace std;
+
+Fecha::Fecha(int dia, int mes, int anho) {
+this->dia=dia;
+this->mes=mes;
+this->anho=anho;
+}
+Fecha::Fecha(){
+	dia=1;
+	mes=1;
+	anho=1980;
+}
+int Fecha::getdia(){
+	return dia;
+}
+
+void Fecha::setdia(int dia){
+	this->dia=dia;
+}
+
+int Fecha::getmes(){
+	return mes;
+}
+void Fecha::setmes(int mes){
+	this->mes=mes;
+}
+
+int Fecha::getanho(){
+	return anho;
+}
+
+void Fecha::setanho(int anho){
+	this->anho=anho;
+}
+void Fecha::input(){
+	cout<<"ingrese el dia: ";
+	cin>>this->dia;
+	cout<<"ingrese el mes: ";
+	cin>>this->mes;
+	cout<<"ingrese el año: ";
+	cin>>this->anho;
+}
+void Fecha::show(){
+	cout<<this->dia<<" / "<<this->mes<<" / "<<this->anho<<endl;
+}
+
+void Fecha::sumadia(int d,int m,int an){
+	int suma;
+	int dia=0;
+	cout<<"ingrese cuantos dias desea sumar: "<<endl;
+	cin>>suma;
+	suma=suma+d;
+	switch(m){
+	case 1:
+		if(suma>31){
+			m=(suma/31)+1;
+			dia=(suma/31)*31;
+			suma=suma-dia;
+			cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			if(m>12){
+				an++;
+				cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+		}
+		else{
+			cout<<suma<<" / "<<m<<" / "<<an<<endl;
+		}
+		break;
+	case 2:
+		if(suma>28){
+			m=(suma/28)+2;
+			dia=(suma/28)*28;
+			suma=suma-dia;
+			cout<<suma<<" / "<<m<<" / "<<an<<endl;
+		}
+		else{
+			cout<<suma<<" / "<<m<<" / "<<an<<endl;
+		}
+		break;
+	case 3:
+		if(suma>31){
+			m=(suma/31)+3;
+			dia=(suma/31)*31;
+			suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+		break;
+	case 4:
+		if(suma>30){
+			m=(suma/30)+4;
+			dia=(suma/30)*30;
+			suma=suma-dia;
+	    cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+		break;
+	case 5:
+		if(suma>31){
+		m=(suma/31)+5;
+		dia=(suma/31)*31;
+		suma=suma-dia;
+	cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+	   else{
+	cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+	   break;
+	case 6:
+		if(suma>30){
+		m=(suma/30)+6;
+		dia=(suma/30)*30;
+		suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+		else{
+	cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		break;
+	case 7:
+		if(suma>31){
+		m=(suma/31)+7;
+		dia=(suma/31)*31;
+		suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		break;
+	case 8:
+		if(suma>31){
+		m=(suma/31)+8;
+		dia=(suma/31)*31;
+	   suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		break;
+	case 9:
+		if(suma>30){
+		m=(suma/30)+9;
+		dia=(suma/30)*30;
+		 suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+			break;
+	case 10:
+		if(suma>31){
+		m=(suma/31)+10;
+		dia=(suma/31)*31;
+		 suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+		else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+			}
+			break;
+
+	case 11:
+		if(suma>30){
+		m=(suma/30)+11;
+		dia=(suma/30)*30;
+		 suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+	else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+				}
+			break;
+	case 12:
+		if(suma>31){
+		m=(suma/31)+12;
+		dia=(suma/31)*31;
+		 suma=suma-dia;
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+	else{
+		cout<<suma<<" / "<<m<<" / "<<an<<endl;
+					}
+			break;
+	}
+}
+void Fecha::compararfecha(int d,int m, int a){
+	int dia;
+	int mes;
+	int anho;
+	cout<<"fecha ingresada: "<<endl;
+	cout<<d<<" / "<<m<<" / "<<a<<endl;
+cout<<"ingrese una fecha nueva: "<<endl;
+cout<<"dia: "<<endl;
+cin>>dia;
+cout<<"mes: "<<endl;
+cin>>mes;
+cout<<"año: "<<endl;
+cin>>anho;
+if(dia==d){
+	dia=d;
+	if(mes==m){
+		mes=m;
+		if(anho==a){
+			anho=a;
+			cout<<"las fechas ingresadas son iguales"<<endl;
+		}
+	}
+}
+else{
+	cout<<"las fechas ingresadas son distintas"<<endl;
+}
+
+
+
+
+
+}
