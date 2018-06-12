@@ -1,0 +1,56 @@
+/*
+ * Apilar.cpp
+ *
+ *  Created on: 11 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Apilar.h"
+#include "nodo.h"
+#include <iostream>
+using namespace std;
+
+Apilar::Apilar() {
+superior=NULL;
+}
+
+nodo* Apilar::getsuperior(){
+	return superior;
+}
+void Apilar::setsuperior(nodo*superior){
+	this->superior=superior;
+}
+
+
+void Apilar::push(Fecha*valor){
+nodo *newnodo=new nodo();
+newnodo->setvalor(valor);
+newnodo->setsiguiente(superior);
+//superior apunta al nuevo nodo
+superior=newnodo;
+}
+
+Fecha* Apilar::pop(){
+	if(superior==NULL)
+		return NULL;
+	//crear nodo auxiliar
+	nodo* nodoeliminar=superior;
+	//crear variable auxiliar con la direccion del nodo a eliminar
+	Fecha *valor=nodoeliminar->getvalor();
+	superior=superior->getsiguiente();
+	delete nodoeliminar;
+	return valor;
+}
+
+void Apilar::show(){
+	nodo *mostrar=superior;
+	while(mostrar!=NULL){
+		cout<<"Direccion: "<<mostrar<<"Valor: "<<mostrar->getvalor()->getdia()<<"Siguiente: "<<mostrar->getsiguiente()<<endl;
+		mostrar=mostrar->getsiguiente();
+	}
+
+}
+
+
+
+

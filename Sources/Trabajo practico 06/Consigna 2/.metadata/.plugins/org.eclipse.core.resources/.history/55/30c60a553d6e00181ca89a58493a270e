@@ -1,0 +1,16 @@
+/*
+ * Apilar.h
+ *
+ *  Created on: 11 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef APILAR_H_
+#define APILAR_H_
+
+class Apilar {
+public:
+	Apilar();
+};
+
+#endif /* APILAR_H_ */

@@ -1,0 +1,16 @@
+/*
+ * Fecha.cpp
+ *
+ *  Created on: 11 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Fecha.h"
+
+Fecha::Fecha() {
+	dia=0;
+	mes=0;
+	anho=0;
+
+}
+

@@ -1,0 +1,14 @@
+/*
+ * nodo.cpp
+ *
+ *  Created on: 12 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "nodo.h"
+
+nodo::nodo() {
+	// TODO Auto-generated constructor stub
+
+}
+

@@ -1,0 +1,33 @@
+//============================================================================
+// Name        : main.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+#include "Apilar.h"
+
+int main() {
+Apilar ap;
+cout<<"Test pop: "<<ap.pop()<<endl<<endl;
+
+ap.push(new Fecha(15,07,1996));
+ap.show();
+cout<<endl;
+ap.push(new Fecha(2,05,2003));
+ap.show();
+cout<<endl;
+ap.push(new Fecha(13,03,1993));
+ap.show();
+cout<<endl;
+
+Fecha *s=NULL;
+if((s=ap.pop())!=NULL)
+	cout<<"Pop: "<<s->getdia()<<" / "<<s->getmes()<<" / "<<s->getanho()<<endl;
+if((s=ap.pop())!=NULL)
+	cout<<"Pop: "<<s->getdia()<<" / "<<s->getmes()<<" / "<<s->getanho()<<endl;
+	return 0;
+}

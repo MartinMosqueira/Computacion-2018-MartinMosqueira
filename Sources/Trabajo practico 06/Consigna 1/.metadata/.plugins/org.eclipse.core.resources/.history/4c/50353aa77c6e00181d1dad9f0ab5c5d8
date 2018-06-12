@@ -1,0 +1,36 @@
+/*
+ * Enlace.cpp
+ *
+ *  Created on: 12 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Enlace.h"
+#include <iostream>
+
+Enlace::Enlace() {
+superior=NULL;
+
+}
+
+nodo* Enlace::getsuperior(){
+	return superior;
+}
+
+void Enlace::setsuperior(nodo*superior){
+	this->superior=superior;
+}
+
+void Enlace::push(double dato){
+
+}
+
+
+
+
+
+
+
+
+
+

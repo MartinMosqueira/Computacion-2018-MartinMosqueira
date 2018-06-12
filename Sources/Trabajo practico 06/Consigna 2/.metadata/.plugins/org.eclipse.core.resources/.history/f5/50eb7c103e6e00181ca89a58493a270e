@@ -1,0 +1,27 @@
+/*
+ * Apilar.cpp
+ *
+ *  Created on: 11 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Apilar.h"
+#include <iostream>
+
+Apilar::Apilar() {
+superior=NULL;
+}
+
+Fecha* Apilar::getsuperior(){
+	return superior;
+}
+void Apilar::setsuperior(nodo*superior){
+	this->superior=superior;
+}
+
+
+
+
+void Apilar::push(Fecha*valor){
+
+}

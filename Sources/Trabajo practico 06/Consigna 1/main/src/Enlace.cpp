@@ -1,0 +1,57 @@
+/*
+ * Enlace.cpp
+ *
+ *  Created on: 12 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Enlace.h"
+#include <iostream>
+using namespace std;
+
+Enlace::Enlace() {
+superior=NULL;
+
+}
+
+nodo* Enlace::getsuperior(){
+	return superior;
+}
+
+void Enlace::setsuperior(nodo*superior){
+	this->superior=superior;
+}
+
+void Enlace::push(double dato){
+nodo* newnodo= new nodo();
+newnodo->setdato(dato);
+newnodo->setsiguiente(superior);
+superior=newnodo;
+}
+
+double Enlace::pop(){
+	if(superior==NULL)
+		return NULL;
+	nodo* nodoeliminar=superior;
+	double dato=nodoeliminar->getdato();
+	superior=superior->getsiguiente();
+	delete nodoeliminar;
+	return dato;
+}
+
+void Enlace::show(){
+	nodo* mostrar=superior;
+	while(mostrar!=NULL){
+		cout<<"Direccion: "<<mostrar<<endl;
+		cout<<"Valor: "<<mostrar->getdato()<<endl;
+		cout<<"Siguiente: "<<mostrar->getsiguiente()<<endl;
+		mostrar=mostrar->getsiguiente();
+	}
+}
+
+
+
+
+
+
+

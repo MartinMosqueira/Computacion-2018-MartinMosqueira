@@ -1,0 +1,15 @@
+/*
+ * Enlace.cpp
+ *
+ *  Created on: 12 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Enlace.h"
+#include <iostream>
+
+Enlace::Enlace() {
+superior=NULL;
+
+}
+

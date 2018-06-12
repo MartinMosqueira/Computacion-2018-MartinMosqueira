@@ -1,0 +1,23 @@
+/*
+ * Apilar.cpp
+ *
+ *  Created on: 11 jun. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Apilar.h"
+#include <iostream>
+
+Apilar::Apilar() {
+superior=NULL;
+}
+
+Fecha* Apilar::
+
+
+
+
+
+void Apilar::push(Fecha*valor){
+
+}
