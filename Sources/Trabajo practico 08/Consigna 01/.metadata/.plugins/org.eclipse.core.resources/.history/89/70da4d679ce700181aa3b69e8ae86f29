@@ -1,0 +1,16 @@
+/*
+ * Enlace.h
+ *
+ *  Created on: 13 nov. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef ENLACE_H_
+#define ENLACE_H_
+
+class Enlace {
+public:
+	Enlace();
+};
+
+#endif /* ENLACE_H_ */

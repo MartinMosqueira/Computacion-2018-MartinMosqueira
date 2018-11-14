@@ -1,0 +1,47 @@
+//============================================================================
+// Name        : main.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+#include "Fecha.h"
+#include "Persona.h"
+
+int main() {
+Fecha fe(1,1,1980);
+cout<<fe.getdia()<<" / "<<fe.getmes()<<" / "<<fe.getanho()<<endl;
+cout << fe.toString() << endl;
+int op;
+Persona per;
+per.input();
+
+while(op != 4){
+cout<<"1: ingresar mas personas "<<endl;
+cout<<"2: mostrar "<<endl;
+cout<<"3: eliminar"<<endl;
+cout<<"4: salir"<<endl;
+cout<<"Seleccione una opcion: "<<endl;
+cin>>op;
+
+switch(op){
+case 1 :
+per.aniadir();
+break;
+case 2:
+per.mostrar();
+break;
+case 3:
+per.eliminar();
+break;
+case 4:
+cout<<"Finalizado...";
+	exit(0);
+break;
+}
+}
+
+}
