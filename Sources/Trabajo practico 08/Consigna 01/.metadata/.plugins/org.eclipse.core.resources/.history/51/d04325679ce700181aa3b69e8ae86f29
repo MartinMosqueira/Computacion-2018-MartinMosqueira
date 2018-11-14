@@ -1,0 +1,14 @@
+/*
+ * Enlace.cpp
+ *
+ *  Created on: 13 nov. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#include "Enlace.h"
+
+Enlace::Enlace() {
+	// TODO Auto-generated constructor stub
+
+}
+

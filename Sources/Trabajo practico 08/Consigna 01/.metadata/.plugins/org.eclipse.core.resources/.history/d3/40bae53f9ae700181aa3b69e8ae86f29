@@ -1,0 +1,16 @@
+/*
+ * Nodo.h
+ *
+ *  Created on: 13 nov. 2018
+ *      Author: Martin Mosqueiraa
+ */
+
+#ifndef NODO_H_
+#define NODO_H_
+
+class Nodo {
+public:
+	Nodo();
+};
+
+#endif /* NODO_H_ */
